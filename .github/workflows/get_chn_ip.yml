@@ -42,8 +42,8 @@ jobs:
     # 本地提交
     - name: Commit files
       run: |
-         git config --local user.email "mayax@github.com"
-         git config --local user.name "mayaxcn"
+         git config --local user.email "lqyss@foxmail.com"
+         git config --local user.name "lhear"
          ls
          pwd
          git rm chn_ip.txt
