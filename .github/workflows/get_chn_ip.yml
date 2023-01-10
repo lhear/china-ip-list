@@ -46,14 +46,14 @@ jobs:
          git config --local user.name "lhear"
          ls
          pwd
-         git rm chn_ip.txt
-         git rm chnroute.txt
-         git commit -m "删除旧有IP文件!"
-         cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/chn_ip.txt /home/runner/work/china-ip-list/china-ip-list/chn_ip.txt
-         cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/chnroute.txt /home/runner/work/china-ip-list/china-ip-list/chnroute.txt
-         git add chn_ip.txt
-         git add chnroute.txt
-         git commit -m "提交新的chn_ip.txt和chnroute.txt文件，更新于$(date "+%Y-%m-%d %H:%M:%S")"
+         git rm cn_ipv4.txt
+         git rm cn_ipv6.txt
+         git commit -m "删除旧IP文件!"
+         cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt
+         cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt
+         git add cn_ipv4.txt
+         git add cn_ipv6.txt
+         git commit -m "提交新的cn_ipv4.txt和cn_ipv6.txt文件，更新于$(date "+%Y-%m-%d %H:%M:%S")"
          
     # 更新至远程github代码仓库中
     - name: Push changes
