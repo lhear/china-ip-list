@@ -59,4 +59,5 @@ namespace china_ip_list
             }
             return null;
         }
+    }
 }
