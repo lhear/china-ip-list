@@ -46,9 +46,9 @@ jobs:
          git config --local user.name "lhear"
          ls
          pwd
-         #git rm cn_ipv4.txt
-         #git rm cn_ipv6.txt
-         #git commit -m "删除旧IP文件!"
+         git rm cn_ipv4.txt
+         git rm cn_ipv6.txt
+         git commit -m "删除旧IP文件!"
          cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt
          cp /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt
          git add cn_ipv4.txt
