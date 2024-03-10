@@ -49,12 +49,12 @@ jobs:
          if [[ "$(diff /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt)"x != ""x ]];then
            cp -f /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt
            git add cn_ipv4.txt
-           git commit -m "update cn_ipv4.txt"
+           git commit -m "Update cn_ipv4.txt"
          fi
          if [[ "$(diff /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt)"x != ""x ]];then
            cp -f /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt
            git add cn_ipv6.txt
-           git commit -m "update cn_ipv6.txt"
+           git commit -m "Update cn_ipv6.txt"
          fi
          
     # 更新至远程github代码仓库中
