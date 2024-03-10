@@ -51,7 +51,11 @@ jobs:
          # git commit -m "删除旧IP文件!"
          if [[ $(diff /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt) -ne 0 ]];then
          cp -f /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv4.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv4.txt
-         git commit -m "更新cn_ipv4.txt文件，于$(date "+%Y-%m-%d %H:%M:%S")"
+         git commit -m "更新cn_ipv4.txt文件"
+         fi
+         if [[ $(diff /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt) -ne 0 ]];then
+         cp -f /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt
+         git commit -m "更新cn_ipv6.txt文件"
          fi
          # cp -f /home/runner/work/china-ip-list/china-ip-list/bin/Debug/netcoreapp3.1/cn_ipv6.txt /home/runner/work/china-ip-list/china-ip-list/cn_ipv6.txt
          # git add cn_ipv4.txt
